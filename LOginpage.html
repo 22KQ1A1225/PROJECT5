@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>JavaScript Prompt</title>
+    </head>
+    <style>
+        body{
+            background-size:100% 100%;
+        }
+    </style>
+    <script>
+
+    
+        function loginvalidation(){
+            
+            var uname=document.myform.username.value;
+        
+            var password=document.myform.password.value;
+            if(uname==null || uname==" "){
+                alert("name cant be blank")
+                return false;
+            }
+            else if (password.length<6){
+                alert("password must be 6 letters")
+                return false;
+            }
+            return true
+        }
+</script>
+    <body>
+        <body background="C:\Users\gopir\OneDrive\Desktop\17.jpg"
+    
+        <h2>loginpage</h2>
+        <form name="myform"action="C:\Users\gopir\OneDrive\Desktop\UI DEVELOPMENT\PROJECT5\Homepage.html"
+        onsubmit="return loginvalidation(this)">
+        username: <input type="text" name="username"><br>
+        password: <input type="password"name="password"><br>
+        <body>
+            type of payment</body>
+        <input type="radio" name="number">google pay<br>
+        <input type="radio" name="number">phone pay<br>
+        <input type="submit">
+        
+        
+        </form>
+       </body>
+    
+</html>
